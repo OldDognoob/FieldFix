@@ -1,0 +1,2 @@
+A fully responsive project from scratch to production.
+The intention is to understand the meaning of the project as well as to clarify some issues.
