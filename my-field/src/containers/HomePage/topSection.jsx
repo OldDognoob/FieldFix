@@ -11,7 +11,17 @@ background-position: 0px -150px;
 background-size: cover; // fits the image accordingly to the fitting space
 `;
 
+const BackgroundFilter = styled.div`
+width: 100%;
+height:100%;
+background-color: rgba(40, 73, 87, 0.9);
+display: flex;
+flex-direction: column;
+`;
+
  function TopSection(props) {
-    return<TopSectionContainer>Win</TopSectionContainer>
+    return<TopSectionContainer>
+        <BackgroundFilter>YEA</BackgroundFilter>
+    </TopSectionContainer>
 }
 export default TopSection;
