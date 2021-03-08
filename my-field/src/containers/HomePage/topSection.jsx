@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from "styled-components";
 
-import TopSectionBackgroundImg from "../../images/landing-page.jpg";
+import TopSectionBackgroundImg from "../../images/services/landing-page.jpg";
 
 const TopSectionContainer = styled.div`
 width: 100%;
@@ -12,10 +12,6 @@ background-size: cover; // fits the image accordingly to the fitting space
 `;
 
  function TopSection(props) {
-    return (
-        <div>
-            
-        </div>
-    )
+    return<TopSectionContainer>Win</TopSectionContainer>
 }
 export default TopSection;
