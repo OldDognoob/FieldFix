@@ -38,9 +38,11 @@ img{
 }
 `;
 
+
  function TopSection(props) {
     return<TopSectionContainer>
         <BackgroundFilter>
+            
             <StandoutImg>
                 <img src={TheExpertiseImg} alt="An expert in your doorway"/>
             </StandoutImg>
