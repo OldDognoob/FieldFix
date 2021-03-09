@@ -13,7 +13,7 @@ const ButtonWrapper = styled.button`
   cursor: pointer;
   transition: all 200ms ease-in-out;
   &:hover {
-    background-color: #3d886f;
+    background-color:#21867a;
   }
   &:focus {
     outline: none;
