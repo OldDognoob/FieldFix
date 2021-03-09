@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from "styled-components";
 
-import TopSectionBackgroundImg from "../../images/services/landing-page1.jpg";
-import TheExpertiseImg from "../../images/services/Expertise1.png";
+import TopSectionBackgroundImg from "../../images/thumbnails/landing-page1.jpg";
+import TheExpertiseImg from "../../images/thumbnails/Expertise1.png";
 import BrandName from '../../components/BrandName';
 import {Marginer} from '../../components/marginer';
 import Button from '../../components/button';
