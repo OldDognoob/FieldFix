@@ -4,6 +4,7 @@ import styled from "styled-components";
 import TopSectionBackgroundImg from "../../images/services/landing-page1.jpg";
 import TheExpertiseImg from "../../images/services/Expertise1.png";
 import BrandName from '../../components/BrandName';
+import {Marginer} from '../../components/marginer';
 
 const TopSectionContainer = styled.div`
 width: 100%;
@@ -50,7 +51,7 @@ margin: 0;
 line-height: 1.4;
 color:#fff;
 font-weight: 500;
-font-size: 30px;
+font-size: 35px;
 `;
 
  function TopSection(props) {
@@ -58,7 +59,8 @@ font-size: 30px;
         <BackgroundFilter>
         <TopSectionInnerContainer>
             <LogoContainer>
-                <BrandName logoSize={50} textSize={50}/>
+                <BrandName logoSize={65} textSize={55}/>
+                <Marginer direction="vertical" margin = {8}/>
                 <SloganText>Any Field can be Fixed</SloganText>
             </LogoContainer>
             <StandoutImg>

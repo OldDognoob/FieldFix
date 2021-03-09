@@ -21,7 +21,7 @@ const BrandTitle = styled.h2`
   margin: 0;
   font-size: ${({ size }) => (size ? size + "px" : "35px")};
   color: #fff;
-  font-weight: 900;
+  font-weight: 700;
   margin-left: 6px;
 `;
 
