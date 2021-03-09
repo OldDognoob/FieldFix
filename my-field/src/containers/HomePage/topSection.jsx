@@ -5,6 +5,7 @@ import TopSectionBackgroundImg from "../../images/services/landing-page1.jpg";
 import TheExpertiseImg from "../../images/services/Expertise1.png";
 import BrandName from '../../components/BrandName';
 import {Marginer} from '../../components/marginer';
+import Button from '../../components/button';
 
 const TopSectionContainer = styled.div`
 width: 100%;
@@ -62,6 +63,8 @@ font-size: 35px;
                 <BrandName logoSize={65} textSize={55}/>
                 <Marginer direction="vertical" margin = {8}/>
                 <SloganText>Any Field can be Fixed</SloganText>
+                <Marginer direction="vertical" margin = {15}/>
+                <Button>Join Now</Button>
             </LogoContainer>
             <StandoutImg>
                 <img src={TheExpertiseImg} alt="An expert in your doorway"/>
