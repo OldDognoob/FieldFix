@@ -1,4 +1,15 @@
 {
-    "services": [{"id":1, "title": "Fix everything"},
-    "thumbnailUrl": "http://localhost:9000/carWashing.png"]
+    "services": [{"id":1, "title": "Fix everything",
+    "thumbnailUrl": "http://localhost:3000/car.png","rate": 34,
+    "rating": 4, "expert": { "id": 1, "fullName": "George Sentio" }},
+    { "id": 2, "title": "I will paint your car from top to bottom", 
+        "thumbnailUrl": "http://localhost:3000/dayFiance.jpg", "rate": 50,
+        "rating": 3, "expert": { "id": 1, "fullName": "Maria Harrys" }},
+        { "id": 2, "title": "I will paint your car from top to bottom", 
+            "thumbnailUrl": "http://localhost:3000/waterPlumber.jpg", "rate": 50,
+            "rating": 3, "expert": { "id": 1, "fullName": "Alexander Samsung" }},
+            { "id": 2, "title": "I will paint your car from top to bottom", 
+                "thumbnailUrl": "http://localhost:3000/woodFixing.jpg", "rate": 50,
+                "rating": 3, "expert": { "id": 1, "fullName": "Michael Parker" }}
+]
 }
