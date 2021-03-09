@@ -6,7 +6,7 @@ const ButtonWrapper = styled.button`
   outline: none;
   color: #fff;
   padding: 6px 1em;
-  font-size: ${({ size }) => (size ? size + "px" : "18px")};
+  font-size: ${({ size }) => (size ? size + "px" : "18px")};// if size is available otherwise choose the ones we put
   font-weight: 600;
   border-radius: 3px;
   background-color: #719ea7;

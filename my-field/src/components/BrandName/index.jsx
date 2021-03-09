@@ -9,8 +9,8 @@ const BrandNameContainer = styled.div`
 
 const NameImage = styled.div`
   // if the size is provided then give us px otherwise give us the size we ask for
-  width: ${({ size }) => (size ? size + "px" : "4em")};
-  height: ${({ size }) => (size ? size + "px" : "4em")};
+  width: ${({ size }) => (size ? size + "px" : "3em")};
+  height: ${({ size }) => (size ? size + "px" : "3em")};
   img {
     width: 100%;
     height: 100%;
@@ -19,7 +19,7 @@ const NameImage = styled.div`
 
 const BrandTitle = styled.h2`
   margin: 0;
-  font-size: ${({ size }) => (size ? size + "px" : "35px")};
+  font-size: ${({ size }) => (size ? size + "px" : "25px")};
   color: #fff;
   font-weight: 700;
   margin-left: 6px;

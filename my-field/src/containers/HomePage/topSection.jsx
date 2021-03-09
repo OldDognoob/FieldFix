@@ -56,8 +56,10 @@ font-size: 35px;
 `;
 
  function TopSection(props) {
+     const {children} = props;
     return<TopSectionContainer>
         <BackgroundFilter>
+            {children}
         <TopSectionInnerContainer>
             <LogoContainer>
                 <BrandName logoSize={65} textSize={55}/>
