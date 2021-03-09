@@ -2,7 +2,7 @@ import React from 'react'
 import styled from "styled-components";
 
 import TopSectionBackgroundImg from "../../images/services/landing-page1.jpg";
-import TheExpertiseImg from "../../images/services/Expertise.png";
+import TheExpertiseImg from "../../images/services/Expertise1.png";
 import BrandName from '../../components/BrandName';
 
 const TopSectionContainer = styled.div`
@@ -42,6 +42,15 @@ img{
 const LogoContainer = styled.div`
 display:flex;
 flex-direction: column;
+align-items: flex-start;
+`;
+
+const SloganText = styled.div`
+margin: 0;
+line-height: 1.4;
+color:#fff;
+font-weight: 500;
+font-size: 30px;
 `;
 
  function TopSection(props) {
@@ -49,7 +58,8 @@ flex-direction: column;
         <BackgroundFilter>
         <TopSectionInnerContainer>
             <LogoContainer>
-                <BrandName/>
+                <BrandName logoSize={50} textSize={50}/>
+                <SloganText>Any Field can be Fixed</SloganText>
             </LogoContainer>
             <StandoutImg>
                 <img src={TheExpertiseImg} alt="An expert in your doorway"/>
