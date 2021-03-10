@@ -49,7 +49,7 @@ const Title = styled.h2`
   color: #000;
   text-align: start;
 `;
-const ExpertiseName = styled.h4`
+const ExpertName = styled.h4`
   margin: 0;
   color: rgba(151, 151, 151, 1);
   font-size: 12px;
@@ -73,9 +73,9 @@ const StartingAtText = styled.h6`
   color: rgb(161, 161, 161);
   font-weight: 400;
 `;
-export function ServiceCard(props) {
-  // eslint-disable-next-line no-unused-vars
-  const { thumbnailUrl, expert, id, title, rate, rating } = props;
+function ServiceCard(props) {
+  const { thumbnailUrl, expert, id,  title, rate, rating } = props;
+  
 return(
     <CardContainer>
         <TopContainer>
@@ -86,7 +86,7 @@ return(
         <ContentContainer>
         <Title>{title}</Title>
         <Marginer direction="vertical" margin={10} />
-        <ExpertiseName>{expert.fullName}</ExpertiseName>
+        <ExpertName>{expert.fullName}</ExpertName>
         </ContentContainer>
         <BottomContainer>
         <RatingContainer>
