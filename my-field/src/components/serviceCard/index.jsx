@@ -5,18 +5,21 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 const CardContainer = styled.div`
-display: flex;
-flex-direction: column;
-width: 300px;
-min-height: 250px;
-background-color:#fff;
-box-shadow: 0 0 1px rgba(0, 0, 0, 0.17);
-margin: 0.5em;
-margin-bottom:1.3em;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 300px;
+  min-height: 250px;
+  background-color: #fff;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+  margin: 0.5em;
+  margin-bottom: 1.3em;
 `;
+
 const TopContainer = styled.div`
   width: 100%;
 `;
+
 const ServiceThumbnail = styled.div`
   width: 100%;
   height: 11em;
@@ -25,6 +28,7 @@ const ServiceThumbnail = styled.div`
     height: 100%;
   }
 `;
+
 const ContentContainer = styled.div`
   width: 100%;
   display: flex;
@@ -33,6 +37,7 @@ const ContentContainer = styled.div`
   flex: 1;
   padding: 15px 14px;
 `;
+
 const BottomContainer = styled.div`
   width: 100%;
   height: 32px;
@@ -42,6 +47,7 @@ const BottomContainer = styled.div`
   border-top: 1px solid rgba(15, 15, 15, 0.19);
   padding: 0 10px;
 `;
+
 const Title = styled.h2`
   font-size: 18px;
   margin: 0;
@@ -49,56 +55,62 @@ const Title = styled.h2`
   color: #000;
   text-align: start;
 `;
-const ExpertName = styled.h4`
+
+const SpecialistName = styled.h4`
   margin: 0;
   color: rgba(151, 151, 151, 1);
   font-size: 12px;
   font-weight: 400;
 `;
+
 const RatingContainer = styled.div`
   display: flex;
-  color: #45adb1;
+  color: #5d9276;
 `;
+
 const PriceContainer = styled.div`
   display: flex;
   align-items: center;
 `;
+
 const PriceText = styled.div`
   margin-left: 3px;
-  color: #69b699;
+  color: #5aadad;
   font-weight: 700;
 `;
+
 const StartingAtText = styled.h6`
   margin: 0;
   color: rgb(161, 161, 161);
   font-weight: 400;
 `;
-function ServiceCard(props) {
-  const { thumbnailUrl, expert, id,  title, rate, rating } = props;
-  
-return(
+
+ function ServiceCard(props) {
+  const { thumbnailUrl, specialist, id, title, rate, rating } = props;
+
+  return (
     <CardContainer>
-        <TopContainer>
-            <ServiceThumbnail>
-                <img src={thumbnailUrl} alt={title}/>
-            </ServiceThumbnail>
-        </TopContainer>
-        <ContentContainer>
+      <TopContainer>
+        <ServiceThumbnail>
+          <img src={thumbnailUrl} alt={title} />
+        </ServiceThumbnail>
+      </TopContainer>
+      <ContentContainer>
         <Title>{title}</Title>
         <Marginer direction="vertical" margin={10} />
-        <ExpertName>{expert.fullName}</ExpertName>
-        </ContentContainer>
-        <BottomContainer>
+        <SpecialistName>{specialist.fullName}</SpecialistName>
+      </ContentContainer>
+      <BottomContainer>
         <RatingContainer>
           <FontAwesomeIcon icon={faStar} size="sm" />
           {rating}
         </RatingContainer>
         <PriceContainer>
           <StartingAtText>STARTING AT</StartingAtText>
-          <PriceText>€{rate}/hr</PriceText>
+          <PriceText>${rate}/hr</PriceText>
         </PriceContainer>
-        </BottomContainer>
+      </BottomContainer>
     </CardContainer>
-)
+  );
 }
 export default ServiceCard;
