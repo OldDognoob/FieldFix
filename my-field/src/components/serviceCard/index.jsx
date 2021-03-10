@@ -49,7 +49,7 @@ const Title = styled.h2`
   color: #000;
   text-align: start;
 `;
-const SpecialistName = styled.h4`
+const ExpertiseName = styled.h4`
   margin: 0;
   color: rgba(151, 151, 151, 1);
   font-size: 12px;
@@ -57,7 +57,7 @@ const SpecialistName = styled.h4`
 `;
 const RatingContainer = styled.div`
   display: flex;
-  color: #ebe204;
+  color: #45adb1;
 `;
 const PriceContainer = styled.div`
   display: flex;
@@ -65,7 +65,7 @@ const PriceContainer = styled.div`
 `;
 const PriceText = styled.div`
   margin-left: 3px;
-  color: #2ba679;
+  color: #69b699;
   font-weight: 700;
 `;
 const StartingAtText = styled.h6`
@@ -73,8 +73,9 @@ const StartingAtText = styled.h6`
   color: rgb(161, 161, 161);
   font-weight: 400;
 `;
-function ServiceCard(props){
-    const { thumbnailUrl, expert, id, title, rate, rating } = props;
+export function ServiceCard(props) {
+  // eslint-disable-next-line no-unused-vars
+  const { thumbnailUrl, expert, id, title, rate, rating } = props;
 return(
     <CardContainer>
         <TopContainer>
@@ -85,7 +86,7 @@ return(
         <ContentContainer>
         <Title>{title}</Title>
         <Marginer direction="vertical" margin={10} />
-        <SpecialistName>{expert.fullName}</SpecialistName>
+        <ExpertiseName>{expert.fullName}</ExpertiseName>
         </ContentContainer>
         <BottomContainer>
         <RatingContainer>
@@ -94,7 +95,7 @@ return(
         </RatingContainer>
         <PriceContainer>
           <StartingAtText>STARTING AT</StartingAtText>
-          <PriceText>${rate}/hr</PriceText>
+          <PriceText>€{rate}/hr</PriceText>
         </PriceContainer>
         </BottomContainer>
     </CardContainer>
