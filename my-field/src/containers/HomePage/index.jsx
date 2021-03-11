@@ -4,7 +4,7 @@ import Navbar from "../../components/navbar";
 import { InnerPageContainer, PageContainer } from "../../components/pageContainer";
 import TopSection from "./topSection";
 import { deviceSize } from "../../components/responsive";
-import { Marginer } from "../../components/marginer";
+// import { Marginer } from "../../components/marginer";
 import ServiceCard from "../../components/serviceCard";
 
 const Title = styled.h1`

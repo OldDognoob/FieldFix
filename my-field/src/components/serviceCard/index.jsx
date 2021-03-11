@@ -98,7 +98,7 @@ const StartingAtText = styled.h6`
       <ContentContainer>
         <Title>{title}</Title>
         <Marginer direction="vertical" margin={10} />
-        <SpecialistName>{specialist.fullName}</SpecialistName>
+        <SpecialistName>{specialist}</SpecialistName>
       </ContentContainer>
       <BottomContainer>
         <RatingContainer>
@@ -107,7 +107,7 @@ const StartingAtText = styled.h6`
         </RatingContainer>
         <PriceContainer>
           <StartingAtText>STARTING AT</StartingAtText>
-          <PriceText>${rate}/hr</PriceText>
+          <PriceText>€{rate}/hr</PriceText>
         </PriceContainer>
       </BottomContainer>
     </CardContainer>
