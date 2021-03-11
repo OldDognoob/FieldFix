@@ -3,7 +3,7 @@ import styled from "styled-components";
 import BrandName from "../../components/BrandName";
 import { Marginer } from "../marginer";
 
-// import FarmingImg from "../../images/farming.png";
+import FarmingImg from "../../images/thumbnails/farming.png";
 import  Button  from "../button";
 import { deviceSize } from "../responsive";
 import { useMediaQuery } from "react-responsive";
@@ -85,7 +85,7 @@ function SpecialistAd(props) {
           <Button size={15}>Join our Expert Team</Button>
         </SloganContainer>
         <StandoutImage>
-          {/* <img src={} alt="join-as-specialist" /> */}
+          <img src={FarmingImg} alt="join-as-specialist" />
         </StandoutImage>
       </ContentContainer>
     </SpecialistAdContainer>
