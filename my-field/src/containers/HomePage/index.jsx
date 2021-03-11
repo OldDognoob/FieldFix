@@ -22,6 +22,11 @@ const ContentContainer = styled.div`
     padding: 5px;
   }
 `;
+
+const service = {"id":1, "title": "Fix everything",
+"thumbnailUrl": "http://localhost:3000/car.png","rate": 34,
+"rating": 4, "specialist": { "id": 1, "fullName": "George Sentio" }};
+
 function HomePage(props) {
   return (
     <PageContainer>
@@ -31,8 +36,8 @@ function HomePage(props) {
       <InnerPageContainer>
         <ContentContainer>
         <Title>Our most valuable services & More</Title>
+        <ServiceCard {...service}/>
         </ContentContainer>
-        <ServiceCard/>
       </InnerPageContainer>
     </PageContainer>
   );
