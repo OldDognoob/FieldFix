@@ -23,8 +23,8 @@ const ContentContainer = styled.div`
   }
 `;
 
-// const props = ({"id":1, "title": "Fix everything",
-// "thumbnailUrl": "http://localhost:3000/car.png","rate": 34,
+// const service = ({"id":1, "title": "I will arrange your finance problems",
+// "thumbnailUrl": "https://images.unsplash.com/photo-1554252116-ee59370d1f66?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1349&q=80","rate": 34,
 // "rating": 4, "specialist": { "id": 1, "fullName": "George Sentio" }});
 
 function HomePage(props) {
