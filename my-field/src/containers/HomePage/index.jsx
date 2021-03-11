@@ -23,11 +23,12 @@ const ContentContainer = styled.div`
   }
 `;
 
-const service = {"id":1, "title": "Fix everything",
-"thumbnailUrl": "http://localhost:3000/car.png","rate": 34,
-"rating": 4, "specialist": { "id": 1, "fullName": "George Sentio" }};
+// const props = ({"id":1, "title": "Fix everything",
+// "thumbnailUrl": "http://localhost:3000/car.png","rate": 34,
+// "rating": 4, "specialist": { "id": 1, "fullName": "George Sentio" }});
 
 function HomePage(props) {
+  const {service} = props;
   return (
     <PageContainer>
       <TopSection>
