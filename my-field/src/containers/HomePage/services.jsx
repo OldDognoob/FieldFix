@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
+import Axios from "axios";
 import styled from "styled-components";
 import Button from "../../components/button";
 import {deviceSize} from "../../components/responsive";
-import {ServiceCard} from "../../components/serviceCard";
+import ServiceCard from "../../components/serviceCard";
 
 const ServiceContainer = styled.div`
 width:100%;
@@ -65,7 +65,7 @@ function Services(props){
             setServices(response.data);
         }
         setLoading(false);
-    };
+    };// useEffect is only called when the component is mounted an that happen only in life cycle
     useEffect(()=>{
         fetchServices();
     },[]);

@@ -4,8 +4,10 @@ import Navbar from "../../components/navbar";
 import { InnerPageContainer, PageContainer } from "../../components/pageContainer";
 import TopSection from "./topSection";
 import { deviceSize } from "../../components/responsive";
-// import { Marginer } from "../../components/marginer";
-import ServiceCard from "../../components/serviceCard";
+import { Marginer } from "../../components/marginer";
+import Services  from "./services";
+import SpecialistAd  from "../../components/specialistAd";
+
 
 const Title = styled.h1`
 font-weight: 900;
@@ -28,18 +30,21 @@ const ContentContainer = styled.div`
 // "rating": 4, "specialist": { "id": 1, "fullName": "George Sentio" }});
 
 function HomePage(props) {
-  const {service} = props;
   return (
     <PageContainer>
       <TopSection>
-        <Navbar/>
+        <Navbar useTransparent />
       </TopSection>
       <InnerPageContainer>
+        <Marginer direction="vertical" margin="2em" />
         <ContentContainer>
-        <Title>Our most valuable services & More</Title>
-        <ServiceCard {...service}/>
+          <Services />
         </ContentContainer>
+        <Marginer direction="vertical" margin="5em" />
+        <SpecialistAd />
+        <Marginer direction="vertical" margin="5em" />
       </InnerPageContainer>
+      {/* <Footer /> */}
     </PageContainer>
   );
 }
