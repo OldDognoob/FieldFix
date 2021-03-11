@@ -7,6 +7,7 @@ import { deviceSize } from "../../components/responsive";
 import { Marginer } from "../../components/marginer";
 import Services  from "./services";
 import SpecialistAd  from "../../components/specialistAd";
+import  Footer  from "../../components/footer";
 
 
 const Title = styled.h1`
@@ -44,7 +45,7 @@ function HomePage(props) {
         <SpecialistAd />
         <Marginer direction="vertical" margin="5em" />
       </InnerPageContainer>
-      {/* <Footer /> */}
+      <Footer />
     </PageContainer>
   );
 }
