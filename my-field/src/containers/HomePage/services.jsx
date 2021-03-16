@@ -56,7 +56,7 @@ function Services(props){
 
     const fetchServices = async () => {
         setLoading(true);
-        const response = await Axios.get("http://localhost:9000/services").catch(
+        const response = await Axios.get("http://localhost:3000/services").catch(
             (err)=> {
                 console.log("Error:", err);
             }

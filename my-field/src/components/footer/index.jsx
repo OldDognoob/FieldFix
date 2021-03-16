@@ -132,7 +132,7 @@ const SocialIcon = styled.div`
       <BottomContainer>
         <LeftBottomContainer>
           <BrandName hideLogo color="#8A8A8A" textSize={isMobile ? 20 : 25} />
-          <PrivacyText> &#169; All Rights Reserved. 2020</PrivacyText>
+          <PrivacyText> &#169; All Rights Reserved. 2021</PrivacyText>
         </LeftBottomContainer>
         <RightBottomContainer>
           <SocialIcon>
