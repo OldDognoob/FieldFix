@@ -14,6 +14,7 @@ align-items: flex-start;
 
 const Title= styled.h1`
 font-weight: 900;
+margin-left: 30px;
 color: #000;
 @media screen and (max-width: ${deviceSize.mobile}px) {
     font-size: 25px;
@@ -22,6 +23,7 @@ color: #000;
 const ServicesWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
+  margin-left:28px;
 `;
 
 const BottomContainer = styled.div`

@@ -66,12 +66,13 @@ const SpecialistName = styled.h4`
 const RatingContainer = styled.div`
   display: flex;
   color: #5d9276;
-  align-items: center;
+ 
 `;
 
 const PriceContainer = styled.div`
   display: flex;
   align-items: center;
+  
 `;
 
 const PriceText = styled.div`
