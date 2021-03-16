@@ -99,7 +99,7 @@ const StartingAtText = styled.h6`
       <ContentContainer>
         <Title>{title}</Title>
         <Marginer direction="vertical" margin={10} />
-        <SpecialistName>{specialist}</SpecialistName>
+        <SpecialistName>{specialist.fullName}</SpecialistName>
       </ContentContainer>
       <BottomContainer>
         <RatingContainer>
