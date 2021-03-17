@@ -23,5 +23,5 @@ min-height: 70vh;
 padding:1em;
 display: flex;
 flex-direction: column;
-align-items: flex-start;
+align-items: center;
 `;
