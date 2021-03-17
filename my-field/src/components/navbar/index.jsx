@@ -14,8 +14,8 @@ const NavbarContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 0 1.3em;
-  /* background-color: ${({ useTransparent }) =>
-    useTransparent ? "transparent" : "#264653"}; */
+  background-color: ${({ useTransparent }) =>
+    useTransparent ? "transparent" : "#264653"};
 `;
 const AccessibilityContainer = styled.div`
   height: 100%;
@@ -40,7 +40,7 @@ const Seperator = styled.div`
 `;
 
 function Navbar(props) {
-//   const { useTransparent } = props;
+  const { useTransparent } = props;
 //   const isMobile = useMediaQuery({ maxWidth: deviceSize.mobile });
   return (
     <NavbarContainer>
