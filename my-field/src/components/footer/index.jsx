@@ -97,7 +97,7 @@ const SocialIcon = styled.div`
     margin-right: 10px;
   }
   &:hover {
-    color: #777777;
+    color: #6f7979;
   }
   @media screen and (max-width: ${deviceSize.mobile}px) {
     font-size: 17px;
@@ -131,7 +131,7 @@ const SocialIcon = styled.div`
       </TopContainer>
       <BottomContainer>
         <LeftBottomContainer>
-          <BrandName hideLogo color="#8A8A8A" textSize={isMobile ? 20 : 25} />
+          <BrandName hideLogo color="#181717" textSize={isMobile ? 20 : 25} />
           <PrivacyText> &#169; All Rights Reserved. 2021</PrivacyText>
         </LeftBottomContainer>
         <RightBottomContainer>
