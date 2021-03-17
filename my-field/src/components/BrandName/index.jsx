@@ -20,7 +20,7 @@ const NameImage = styled.div`
 const BrandTitle = styled.h2`
   margin: 0;
   font-size: ${({ size }) => (size ? size + "px" : "25px")};
-  color: #fff;
+  /* color: #696767; */
   font-weight: 700;
   margin-left: 6px;
 `;
