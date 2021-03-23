@@ -22,7 +22,7 @@ const AccessibilityContainer = styled.div`
   display: flex;
   align-items: center;
 `;
-const AnchorLink = styled.a`
+const AnchorLink = styled(Link)`
   font-size: 12px;
   color: #fff;
   cursor: pointer;
@@ -50,11 +50,11 @@ function Navbar(props) {
         <Marginer direction="horizontal" margin={10} />
         <Seperator />
         <Marginer direction="horizontal" margin={10} />
-        <Link to="/customer/access">
+        <Link to="/customer/access/signup">
         <Button size={11}>Register</Button>
         </Link>
         <Marginer direction="horizontal" margin={8} />
-        <AnchorLink>Login</AnchorLink>
+        <AnchorLink to="/customer/access/signin">Login</AnchorLink>
       </AccessibilityContainer>
     </NavbarContainer>
   );

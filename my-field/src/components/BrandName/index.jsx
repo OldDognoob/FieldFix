@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import LogoImg from "../../images/logos/brand.png";
+import {Link} from "react-router-dom";
 
 const BrandNameContainer = styled.div`
   display: flex;
@@ -25,14 +26,25 @@ const BrandTitle = styled.h2`
   margin-left: 6px;
 `;
 
+const StyledLink = styled(Link)`
+text-decoration: none;
+`;
+
 function BrandName(props) {
-    const { logoSize, textSize} = props;
+  const { logoSize, textSize, color, hidelogo } = props;
   return (
     <BrandNameContainer>
-      <NameImage size={logoSize}>
-        <img src={LogoImg} alt="FieldFix Brand Logo" />
-      </NameImage>
-      <BrandTitle size={textSize}>FieldFix</BrandTitle>
+      {!hidelogo && (
+        <Link to="/"><NameImage size={logoSize}>
+          <img src={LogoImg} alt="FieldFix Brand Logo" />
+        </NameImage>
+        </Link>
+      )}
+      <StyledLink to="/">
+      <BrandTitle size={textSize} color={color}>
+        FieldFix
+      </BrandTitle>
+      </StyledLink>
     </BrandNameContainer>
   );
 }
