@@ -3,7 +3,7 @@ import styled from "styled-components";
 import BrandName from "../BrandName";
 import Button  from "../button";
 import { Marginer } from "../marginer";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 // import { deviceSize } from "../responsive";
 // import { useMediaQuery } from "react-responsive";
 
@@ -50,7 +50,9 @@ function Navbar(props) {
         <Marginer direction="horizontal" margin={10} />
         <Seperator />
         <Marginer direction="horizontal" margin={10} />
-          <Button size={11}>Register</Button>
+        <Link to="/customer/access">
+        <Button size={11}>Register</Button>
+        </Link>
         <Marginer direction="horizontal" margin={8} />
         <AnchorLink>Login</AnchorLink>
       </AccessibilityContainer>
