@@ -7,6 +7,9 @@ import BrandName from '../../components/BrandName';
 import {Marginer} from '../../components/marginer';
 import Button from '../../components/button';
 
+import { deviceSize } from "../../components/responsive";
+import { useMediaQuery } from "react-responsive";
+
 const TopSectionContainer = styled.div`
 width: 100%;
 height: 800px;
@@ -29,6 +32,12 @@ height:100%;
 display: flex;
 align-items: center;
 justify-content: space-evenly;
+
+@media screen and (max-width: ${deviceSize.mobile}px) {
+    /* height: 700px;
+    background-position: 0px 0px; */
+    justify-content: center;
+  }
 `;
 
 const StandoutImg= styled.div`
@@ -57,20 +66,24 @@ font-size: 35px;
 
  function TopSection(props) {
      const {children} = props;
+     const isMobile = useMediaQuery({maxWidth: deviceSize.mobile});
+
     return<TopSectionContainer>
         <BackgroundFilter>
             {children}
         <TopSectionInnerContainer>
             <LogoContainer>
-                <BrandName logoSize={65} textSize={55}/>
+                <BrandName logoSize={isMobile ? 50 : 65} textSize={isMobile ? 45 : 55}/>
                 <Marginer direction="vertical" margin = {8}/>
                 <SloganText>Any Field can be Fixed</SloganText>
                 <Marginer direction="vertical" margin = {15}/>
                 <Button>Join Now</Button>
             </LogoContainer>
+            {!isMobile && (
             <StandoutImg>
                 <img src={TheExpertiseImg} alt="An expert in your doorway"/>
             </StandoutImg>
+            )}
             </TopSectionInnerContainer>
         </BackgroundFilter>
     </TopSectionContainer>
