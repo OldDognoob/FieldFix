@@ -13,9 +13,13 @@ import { useMediaQuery } from "react-responsive";
 const TopSectionContainer = styled.div`
 width: 100%;
 height: 800px;
-background:url(${TopSectionBackgroundImg});
+background:url(${TopSectionBackgroundImg})no-repeat;
 background-position: 0px -150px;
 background-size: cover; // fits the image accordingly to the fitting space
+@media screen and (max-width: ${deviceSize.mobile}px) {
+    height: 700px;
+    background-position: 0px 0px;
+  }
 `;
 
 const BackgroundFilter = styled.div`
@@ -54,6 +58,9 @@ const LogoContainer = styled.div`
 display:flex;
 flex-direction: column;
 align-items: flex-start;
+@media screen and (max-width: ${deviceSize.mobile}px) {
+    align-content: center;
+  }
 `;
 
 const SloganText = styled.div`
@@ -62,6 +69,11 @@ line-height: 1.4;
 color:#fff;
 font-weight: 500;
 font-size: 35px;
+@media screen and (max-width: ${deviceSize.mobile}px) {
+    /* height: 700px;
+    background-position: 0px 0px; */
+    font-size:24px;
+  }
 `;
 
  function TopSection(props) {
@@ -73,7 +85,7 @@ font-size: 35px;
             {children}
         <TopSectionInnerContainer>
             <LogoContainer>
-                <BrandName logoSize={isMobile ? 50 : 65} textSize={isMobile ? 45 : 55}/>
+                <BrandName logoSize={isMobile ? 40 : 65} textSize={isMobile ? 35: 55}/>
                 <Marginer direction="vertical" margin = {8}/>
                 <SloganText>Any Field can be Fixed</SloganText>
                 <Marginer direction="vertical" margin = {15}/>
