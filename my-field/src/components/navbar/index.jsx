@@ -4,8 +4,8 @@ import BrandName from "../BrandName";
 import Button  from "../button";
 import { Marginer } from "../marginer";
 import { Link } from "react-router-dom";
-// import { deviceSize } from "../responsive";
-// import { useMediaQuery } from "react-responsive";
+import { deviceSize } from "../responsive";
+import { useMediaQuery } from "react-responsive";
 
 const NavbarContainer = styled.div`
   width: 100%;
@@ -16,6 +16,7 @@ const NavbarContainer = styled.div`
   padding: 0 1.3em;
   background-color: ${({ useTransparent }) =>
     useTransparent ? "transparent" : "#264653"};
+
 `;
 const AccessibilityContainer = styled.div`
   height: 100%;
@@ -41,14 +42,14 @@ const Seperator = styled.div`
 
 function Navbar(props) {
   const { useTransparent } = props;
-//   const isMobile = useMediaQuery({ maxWidth: deviceSize.mobile });
+  const isMobile = useMediaQuery({ maxWidth: deviceSize.mobile });
   return (
-    <NavbarContainer>
+    <NavbarContainer useTransparent={useTransparent}>
       <BrandName />
       <AccessibilityContainer>
-        <AnchorLink>Expertise Portal</AnchorLink>
-        <Marginer direction="horizontal" margin={10} />
-        <Seperator />
+        {!isMobile && <AnchorLink>Expertise Portal</AnchorLink>}
+        {!isMobile && <Marginer direction="horizontal" margin={10} />}
+        {!isMobile && <Seperator />}
         <Marginer direction="horizontal" margin={10} />
         <Link to="/customer/access/signup">
         <Button size={11}>Register</Button>
