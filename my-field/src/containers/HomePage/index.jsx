@@ -20,9 +20,9 @@ const ContentContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 1em;
+  /* padding: 1em; */
   @media screen and (max-width: ${deviceSize.mobile}px) {
-    padding: 5px;
+    
   }
 `;
 

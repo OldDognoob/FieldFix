@@ -59,7 +59,7 @@ display:flex;
 flex-direction: column;
 align-items: flex-start;
 @media screen and (max-width: ${deviceSize.mobile}px) {
-    align-content: center;
+    align-items: center;
   }
 `;
 
